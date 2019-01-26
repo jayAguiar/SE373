@@ -2,10 +2,17 @@
 <html lang="en">
 
 <body>
+    <!--gets variables from the route to this page in app.js-->
     <h2>About Page {{junk}}</h2>
     <p>{{parameters}}</p>
+     <!--Uses partial words.hbs-->
     <p>{{> words}}</p>
+    <!--Image file is in public/images. 
+        Since we set up a static route in app.js 
+        we don't have to specify the 'public' folder
+    -->
     <img src="/images/george.jpg" alt=""/>
+     <!--Uses partial footer.hbs-->
     {{> footer}}
 </body>
 </html>
